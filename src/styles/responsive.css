@@ -1,0 +1,97 @@
+@media screen and (min-width: 650px) {
+
+    header .menuToggle {
+        display: none;
+    }
+    .app-bar .app-bar__navigation {
+        position: static;
+        list-style: none;
+        font-size: 1.3rem;
+        justify-content: center;
+        flex-direction: row;
+        display: flex;
+        width: 70%;
+        height: 65px;
+        align-items: center;
+        background-color: #334257;
+
+    }
+    .app-bar__navigation ul li {
+        display: inline-block;
+    }
+    .app-bar .app-bar__brand {
+        width: 30%;
+        margin-left: 10%;
+    }
+    .app-bar__navigation ul a {
+     margin-top: 0px;
+    }
+
+    .restaurant {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .resto {
+        grid-template-columns: auto 1fr;
+    }
+}
+   
+  @media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+        font-size: 2em;
+    }
+    .image-resto img {
+        width: 100%;
+      }
+
+    .detail {
+        flex-direction: row;
+    }
+    .detail-resto {
+        width: 50%;
+    }
+    .image-resto {
+        width: 50%;
+    }
+    .desc {
+        width: 100%;
+    }
+    input[type=text], select, textarea {
+        width: 100%;
+    }
+
+    .hero h1{
+        font-size: 2.3rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+  }
+   
+  @media screen and (min-width: 850px) {
+    .restaurant {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .app-bar .app-bar__brand {
+        margin-left: 20%;
+    }
+  }
+   
+  @media screen and (min-width: 1200px) {
+    .restaurant {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .detail, .container-post {
+        padding: 0 100px;
+    }
+  }
+   
+  @media screen and (min-width: 1600px) {
+    .restaurant  {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .detail {
+        padding: 0 200px;
+    }
+  }
